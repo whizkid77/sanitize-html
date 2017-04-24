@@ -191,7 +191,7 @@ function sanitizeHtml(html, options, _recursing) {
         result += " />";
       } else {
         result += ">";
-        if (frame.innerText && !hasText && !options.textFilter) {
+        if (frame.innerText && !hasText) {
           result += frame.innerText;
         }
       }
